@@ -1,0 +1,21 @@
+@import "./base/reset";
+
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/responsive";
+
+@import "./shared/descriptions";
+@import "./shared/titles";
+@import "./shared/padding";
+@import "./shared/logo";
+@import "./shared/buttons";
+@import "./shared/images";
+
+@import "./base/fonts";
+@import "./base/base";
+
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+
+@import "./pages/home.scss";

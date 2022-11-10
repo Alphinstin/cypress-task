@@ -1,0 +1,20 @@
+@mixin button {
+  width: 14.4rem;
+  height: 4.8rem;
+  min-width: 144px;
+  min-height: 48px;
+  outline: none;
+  border: none;
+  @extend %description-14;
+}
+
+%primary-button {
+  @include button;
+  background-color: $color-astronaut;
+}
+
+%secondary-button {
+  @include button;
+  background-color: $color-white;
+  color: $color-astronaut;
+}

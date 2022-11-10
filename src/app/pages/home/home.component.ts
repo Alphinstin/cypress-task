@@ -2,13 +2,13 @@ import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-home',
   standalone: true,
   imports: [NgOptimizedImage],
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class FooterComponent implements OnInit {
+export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

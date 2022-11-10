@@ -28,10 +28,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/styles/index.scss"
             ],
             "scripts": []
           },
@@ -106,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "87682050-8cc8-4706-8461-55ee38c89d4d"
   }
 }

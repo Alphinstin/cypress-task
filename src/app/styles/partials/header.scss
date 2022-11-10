@@ -1,0 +1,162 @@
+.navigation {
+  @extend %padding-page-default;
+
+  padding-top: max(40px, 4rem);
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 36rem;
+  }
+  &__logo {
+    z-index: 4;
+  }
+  &__logo__image {
+    @extend %logo-main;
+    height: 5.4rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 7.4rem;
+    flex: 1;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &__link {
+        @extend %description-16;
+        &.active {
+          font-weight: 600;
+        }
+        max-width: 9rem;
+      }
+
+      &:last-child {
+        height: 4.9rem;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-astronaut;
+        flex: 1;
+      }
+    }
+
+    @include media("<=phone") {
+      display: none;
+    }
+  }
+}
+
+.navigation__button {
+  border: none;
+  margin-left: auto;
+  background: transparent;
+  position: relative;
+  height: 20px;
+  width: 41.02px;
+  z-index: 4;
+  padding: 0;
+
+  &__chair {
+    position: absolute;
+    top: 0;
+  }
+  & svg {
+    height: 16px;
+  }
+
+  @include media(">phone") {
+    display: none;
+  }
+}
+
+#contactUs {
+  @extend %description-14;
+  flex-basis: 100%;
+
+  text-align: center;
+  color: $color-white;
+  font-weight: 500;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.navigation__mobile__menu {
+  z-index: 3;
+  @extend %padding-page-default;
+  position: absolute;
+  top: 0;
+  background-color: $color-white;
+  width: 100%;
+  padding-top: 80px;
+  display: none;
+  height: 359px;
+  overflow-y: auto;
+
+  ul {
+    gap: 40px;
+  }
+
+  & .navigation__list__item__link {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #contactUs {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.backdrop {
+  display: none;
+  z-index: 2;
+  height: 100vh;
+  position: absolute;
+  background-color: $color-overlay;
+  width: 100%;
+}
+
+.menu-btn span {
+  height: 2px;
+  width: 22px;
+  background-color: $color-black;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2px;
+}
+
+.open span:first-child,
+.open span:last-child {
+  display: none !important;
+}
+.open span:nth-child(2) {
+  transform: rotate(45deg);
+  position: relative;
+}
+.open span:nth-child(2):after {
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 22px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  transform: rotate(270deg);
+}
+
+.navigation__bars {
+  position: absolute;
+  top: -2px;
+  left: 9px;
+}

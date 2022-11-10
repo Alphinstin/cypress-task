@@ -1,0 +1,43 @@
+@use "./../utils/mixins.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+}
+
+body {
+  @extend %description-18;
+}
+
+a {
+  outline: none;
+  color: black;
+  text-decoration: none;
+}
+
+*:active {
+  outline: none;
+}
+
+.appear {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  display: block !important;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    display: block !important;
+    opacity: 1;
+  }
+}

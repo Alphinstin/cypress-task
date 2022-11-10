@@ -1,0 +1,170 @@
+.footer {
+  @extend %padding-page-default;
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+}
+.footer__wrapper {
+  display: flex;
+
+  @include media("<phone") {
+    display: grid;
+    gap: 20px;
+  }
+}
+.footer__brand {
+  flex: 1;
+}
+.footer__brand__logo__link {
+}
+.footer__brand__logo__image {
+  @extend %logo-main;
+}
+
+.footer__brand__text {
+  @extend %title-36;
+  margin-top: 1.6rem;
+
+  @include media("<phone") {
+    line-height: 160%;
+  }
+}
+.footer__contact {
+  flex: 1;
+  justify-self: end;
+
+  @include media("<phone") {
+    width: 100%;
+  }
+}
+.footer__contact__form {
+  padding-left: 16rem;
+  padding-top: 2.9rem;
+
+  @include media("<phone") {
+    padding: 0;
+  }
+}
+.footer__contact__form__label__sprite {
+}
+
+#ellipse {
+  width: 1.4rem;
+  height: 1.42rem;
+}
+.footer__contact__form__label {
+  margin-left: 0.6rem;
+  @extend %description-18;
+
+  & span {
+    margin-left: 0.6rem;
+  }
+}
+.footer__contact__form__inputgroup {
+  position: relative;
+  width: 100%;
+  padding-top: 1.9rem;
+}
+.footer__contact__form__inputgroup__input {
+  border: none;
+  border-bottom: 1px solid $color-cod-gray;
+  width: 100%;
+  height: max(45px, 5rem);
+  @extend %description-16;
+  &::placeholder {
+    @extend %description-16;
+    color: $color-lighttray;
+  }
+}
+
+.footer__contact__form__inputgroup__submit,
+.footer__contact__form__inputgroup__submit:active {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  right: 0;
+}
+
+#arrow {
+  fill: none;
+  width: 2.6rem;
+  height: 1.2rem;
+}
+.footer__contact__form__inputgroup__sprite {
+}
+.footer__contact__social {
+  padding-left: 16rem;
+  margin-top: 3.9rem;
+  padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include media("<phone") {
+    padding: 0;
+  }
+
+  &__text {
+    @extend %description-16;
+    width: 20.3rem;
+
+    @include media("<phone") {
+      width: 100%;
+    }
+  }
+}
+.footer__contact__social__links {
+  margin-top: 1.6rem;
+  width: 20.3rem;
+  display: flex;
+  gap: 2.5rem;
+
+  @include media("<=phone") {
+    width: 100%;
+    justify-content: end;
+  }
+}
+.footer__contact__social__link {
+  width: max(32px, 3.2rem);
+  height: max(32px, 3.2rem);
+  border-radius: 50%;
+  background-color: $color-lighttray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contact__social__link__sprite {
+}
+
+#facebook {
+  width: max(24px, 2.4rem);
+  height: max(24px, 2.4rem);
+}
+
+#instagram {
+  width: max(24px, 2.4rem);
+  height: max(24px, 2.4rem);
+}
+
+#tiktok {
+  width: max(41px, 4.1rem);
+  height: max(24px, 2.4rem);
+}
+
+#youtube {
+  width: max(43px, 4.3rem);
+  height: max(24px, 2.4rem);
+}
+.footer__contact__social__link {
+}
+.footer__contact__social__link__sprite {
+}
+.footer__contact__social__link {
+}
+.footer__contact__social__link__sprite {
+}
+.footer__contact__social__link {
+}
+.footer__contact__social__link__sprite {
+}
